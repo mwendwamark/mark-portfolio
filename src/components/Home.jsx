@@ -64,7 +64,7 @@ function Home() {
         </button>
         {/* <FontAwesomeIcon icon={faGithub} /> */}
       </div>
-      <Navbar />
+      {/* <Navbar /> */}
     </>
   );
 }
