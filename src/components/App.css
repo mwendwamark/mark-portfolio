@@ -13,6 +13,9 @@
   will-change: filter;
   transition: filter 300ms;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -59,6 +62,8 @@
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+  /* background:red; */
+  width: 30%;
 }
 
 .Heading span {
@@ -133,7 +138,7 @@
   position: absolute;
   top: 300px;
   left: 90px;
-  width: 50%;
+  width: 52%;
   text-align: left;
   justify-content: flex-start;
   font-size: 28px;
@@ -215,7 +220,7 @@
 /* ============About section=========== */
 .animate__animated {
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 90px;
   font-size: 40px;
   color: transparent;
@@ -227,27 +232,26 @@
   background-clip: text;
   text-decoration: none;
 }
-.about-me-p-about {
+/* My image */
+.my-image {
   position: absolute;
-  top: 180px;
-  left: 90px;
-  width: 50%;
-  text-align: left;
-  justify-content: flex-start;
-  font-size: 28px;
-  font-weight: 200;
-  height: 200px;
+  top: 150px;
+  max-width: 35%;
+  right: 100px;
+  background: white;
+  height: 500px;
+  width: 370px;
+  border-radius: 10px;
 }
 .personal-information-div {
   position: absolute;
   left: 90px;
-  top: 470px;
-  border: 1px solid dimgray;
+  top: 440px;
   border-radius: 6px;
-  width: 30%;
+  width: 40%;
 }
 .personal-information-div p {
-  margin-left: auto;
+  margin-left: 10px;
   display: block;
   justify-content: flex-start;
   text-align: left;
@@ -261,29 +265,96 @@
 .personal-information-div span {
   color: white;
 }
-.social-media-icons {
+.about-me-p-about {
   position: absolute;
+  top: 230px;
   left: 90px;
-  bottom: -700px;
-  height: 100px;
+  width: 54%;
+  text-align: left;
+  font-size: 26px;
+  font-weight: 200;
+  font-family: "poppins";
+  letter-spacing: 2px;
 }
-.social-media-icons a {
-  font-size: 42px;
+.abilities {
+  position: absolute;
+  top: 680px;
+  left: 90px;
+  /* background: red; */
+  width: 93%;
+  text-align: left;
+  height: 70vh;
+}
+.abilities h4 {
+  color: transparent;
+  background: linear-gradient(to right, #ffa500, #ff4500);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-size: 26px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid dimgrey;
+}
+.frontend-tech {
+  position: absolute;
+  width: 30%;
+  height: 400px;
   margin: 10px;
-  color: #ffa500;
-  background: transparent;
-  display: inline-block;
-  background-color: transparent;
-  padding-bottom: 10px;
+  background: #242423;
+  box-shadow: 0 8px 32px 0 rgba(207, 123, 39, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.social-media-icons a:hover {
-  cursor: pointer;
-  color: #ff4500;
-  background: transparent;
+.frontend-tech-h5 {
+  font-size: 25px;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  border-right: 5px solid dimgray;
+  margin: 5px;
 }
+.frontend-tech p {
+  font-size: 22px;
+  margin-left: 10px;
+}
+.frontend-icons {
+  margin-right: 15px;
+  font-size: 36px;
+}
+.backend-tech {
+  position: absolute;
+  width: 30%;
+  right: 300px;
+  margin: 10px;
+  height: 400px;
+  background: #242423;
+  box-shadow: 0 8px 32px 0 rgba(207, 123, 39, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.backend-tech-h5 {
+  font-size: 25px;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  border-right: 5px solid dimgray;
+  margin: 5px;
+}
+.backend-tech p {
+  font-size: 22px;
+  margin-left: 10px;
+}
+.backend-icons {
+  margin-right: 15px;
+  font-size: 36px;
+}
+
+/* certificates  */
 .certificates-heading {
   position: absolute;
-  top: 805px;
+  top: 1200px;
   left: 90px;
   font-size: 34px;
 }
@@ -322,7 +393,7 @@
 }
 .certification-sector {
   position: absolute;
-  top: 900px;
+  top: 1300px;
   left: 90px;
   border: 1px solid dimgray;
   border-radius: 7px;
@@ -332,7 +403,29 @@
   overflow-x: auto; /* Enable horizontal scrolling if needed */
   padding-bottom: 20px;
 }
-
+/* Social Media */
+.social-media-icons {
+  position: absolute;
+  left: 90px;
+  bottom: -1400px;
+  height: 100px;
+  background: red;
+  margin-top: 20px;
+}
+.social-media-icons a {
+  font-size: 42px;
+  margin: 10px;
+  color: #ffa500;
+  background: transparent;
+  display: inline-block;
+  background-color: transparent;
+  padding-bottom: 10px;
+}
+.social-media-icons a:hover {
+  cursor: pointer;
+  color: #ff4500;
+  background: transparent;
+}
 /* ============= Media Querries ======== */
 @media (max-width: 768px) {
   .Heading {

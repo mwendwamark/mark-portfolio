@@ -5,14 +5,15 @@ import "./App.css";
 function Navbar() {
   return (
     <nav className="navbar">
+      
       <li className="navbar-li">
-        <Link to="/">Home</Link>
+        <Link to="/" smooth={true.toString()} duration={500}>Home</Link>
       </li>
       <li className="navbar-li">
-        <Link to="/about">About</Link>
+        <Link to="/about" smooth={true.toString()} duration={500}>About</Link>
       </li>
       <li className="navbar-li">
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects" smooth={true.toString()} duration={500}>Projects</Link>
       </li>
     </nav>
   );
