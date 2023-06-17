@@ -357,6 +357,11 @@ html {
   top: 1200px;
   left: 90px;
   font-size: 34px;
+  color: transparent;
+  background: linear-gradient(to right, #ffa500, #ff4500);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 .certification-image-1 {
   display: inline-block;
@@ -427,9 +432,10 @@ html {
   background: transparent;
 }
 /* ============= Media Querries ======== */
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .Heading {
     font-size: 40px;
+    left: 0;
   }
 
   .my-name {
@@ -462,6 +468,8 @@ html {
   .navbar {
     font-size: 20px;
     margin-top: 27px;
+    right: 7px;
+    top: 40px;
   }
   .navbar-li a {
     width: 100px;
@@ -482,47 +490,110 @@ html {
     position: absolute;
     left: 190px;
   }
+  .button {
+    width: 80px;
+    top: 700px;
+    text-align: center;
+  }
+  .my-image {
+    right: 5px;
+    height: 350px;
+    top: 200px;
+    width: 300px;
+  }
+  .personal-information-div {
+    font-size: 18px;
+    top: 400px;
+    left: 10px;
+  }
+  .personal-information-div p {
+    font-size: 18px;
+  }
+  .about-me-p-about {
+    left: 10px;
+    font-size: 18px;
+    width: 62%;
+    top: 200px;
+  }
+  .animate__animated {
+    font-size: 36px;
+    left: 10px;
+  }
+  .abilities{
+    left: 10px;
+    top: 560px;
+
+  }
+  .frontend-tech{
+    left: 10px;
+    width: 45%;
+  }
+  .backend-tech{
+    right: 10px;
+    width: 45%;
+  }
+  .frontend-tech-h5,
+  .backend-tech-h5{
+    font-size: 20px;
+  }
+  .certification-sector{
+    left: 10px;
+    height: 120;
+  }
+  .certificates-heading{
+    left: 10px;
+    /* font-size: 26px; */
+  }
 }
 /* ===========Media Querry for mobile phones======== */
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .Heading {
-    font-size: 30px;
+    font-size: 20px;
     margin: 1rem;
+    width: 40%;
+    left: 0;
+    /* background: red; */
   }
 
   .my-name {
     font-size: 30px;
     top: 70px;
-    left: 40px;
+    left: 10px;
   }
 
   .typing-effect {
-    font-size: 24px;
+    font-size: 20px;
     top: 140px;
-    left: 40px;
+    left: 10px;
   }
 
   .about-me-p,
   .about-me-p-about {
     font-size: 18px;
-    top: 220px;
-    left: 40px;
-    width: 80%;
+    top: 180px;
+    left: 10px;
+    width: 90%;
   }
 
   .giphy-image {
     height: 150px;
-    width: 200px;
-    right: 20px;
-    top: 150px;
+    /* width: 300px; */
+    left: 20px;
+    top: 460px;
   }
 
   .navbar {
-    top: 20px;
-    right: 10px;
-    font-size: 20px;
+    top: 25px;
+    right: 0;
+    font-size: 10px;
+    width: 40%;
+    /* background: red; */
   }
-
+  .navbar-li a {
+    /* background: red; */
+    width: 43px;
+    margin-left: 5px;
+  }
   .animate__animated {
     font-size: 40px;
     top: 50px;
